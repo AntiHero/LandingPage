@@ -100,6 +100,10 @@ let textWrapper = document.querySelector('.ml7 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g,
 "<span class='letter'>$&</span>");
 
+$(textWrapper.firstChild).addClass('red');
+
+console.log();
+
 anime.timeline({loop: false}).add({
   targets: '.letter',
   translateY: ["1.1em", 0],

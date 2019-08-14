@@ -75,7 +75,7 @@ img {
 .ml7 {
     position: relative;
     font-weight: bold;
-    font-size: 3.7em;
+    font-size: 24px;
 }
 
 .ml7 .text-wrapper {
@@ -97,12 +97,26 @@ h1.ml7 {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 46px;
+    font-size: 3.7em;
     margin-bottom: 0px;
 }
 
 .upperletter {
-    color: #e95c49;
+    color: #e6402b;
+    position: relative;
+    top: .05em;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.lastName {
+    font-weight: 600;
+}
+
+ion-icon[name="heart"] {
+    color: #e6402b;
+    position: relative;
+    top: 3px;
 }
 
 #tagline {
@@ -172,9 +186,12 @@ p {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    margin-right: 2em;
-    bottom: 40px;
-    right: 0%; 
+    width: 470px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+    
 }
 
 .loading-screen {
@@ -203,6 +220,14 @@ p {
 
 .ringTwo img {
     animation: rotateRing 8s linear infinite;
+}
+
+.ml7 .red {
+    color: #e6402b;
+    font-weight: 900;
+    position: relative;
+    top: 2px;
+    font-size: 1.1em;
 }
 
 @keyframes rotateRing {
