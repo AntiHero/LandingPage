@@ -8,6 +8,7 @@ html, body {
     width: 100%;
     height: 100vh;
     background: #121212;
+    overflow: hidden;
 }
 
 body {
@@ -119,6 +120,12 @@ ion-icon[name="heart"] {
     top: 3px;
 }
 
+ion-icon[name="moon"] {
+    position: relative;
+    top: 2px;
+    font-size: 1.2em;
+}
+
 #tagline {
     width: 640px;
 }
@@ -186,7 +193,7 @@ p {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    width: 470px;
+    width: 400px;
     left: 0;
     right: 0;
     margin: auto;
