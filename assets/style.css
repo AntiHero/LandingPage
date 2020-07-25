@@ -1,263 +1,537 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap");
 
-html, body {
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    height: 100vh;
-    background: #121212;
-    overflow: hidden;
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100vh;
+  background: #121212;
 }
 
 body {
-    background: url(img/hero.jpg) no-repeat 50% 50%;
-    background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
-    width: 100%;
+  width: 100%;
+}
+
+a {
+  color: #ffffff;
+  opacity: .5;
+  transition: all .4s;
+}
+
+a:hover {
+  opacity: 1;
 }
 
 .logo {
-    position: fixed;
-    font-family: 'Poppins', sans-serif;
-    line-height: 80px;
-    margin-left: 2em;
-    color: #ffffff;
-    font-size: 15px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    text-transform: uppercase;
-    z-index: 1;
+  position: fixed;
+  font-family: "Poppins", sans-serif;
+  line-height: 80px;
+  margin-left: 2em;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 1;
 }
 
 .logo ion-icon {
-    color: #6adb9d;
-    margin-right: 7px;
-    position: relative;
-    top: 1px;
-    z-index: 1;
+  color: #6adb9d;
+  margin-right: 7px;
+  position: relative;
+  top: 1px;
+  z-index: 1;
 }
 
 .contact {
-    position: fixed;
-    color: #7C7C7C;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
-    right: 100px;
-    line-height: 80px;
-    z-index: 1;
+  color: #f3ebeb;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  right: 100px;
+  line-height: 80px;
+  z-index: 1;
 }
 
 .menu {
-    position: fixed;
-    color: #6adb9d;
-    right: 2em;
-    top: 4px;
-    line-height: 80px;
-    z-index: 1;
+  color: #6adb9d;
+  right: 2em;
+  top: 4px;
+  line-height: 80px;
+  z-index: 1;
 }
 
 .menu ion-icon {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .header {
-    position: absolute;
-    top: 46%;
-    left: 32%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+  left: 15vw;
+  /* transform: translate(40%, -50%); */
+  z-index: 1;
 }
 
 .ml7 {
-    position: relative;
-    font-weight: bold;
-    font-size: 24px;
+  position: relative;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .ml7 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: .2em;
-    padding-right: .05em;
-    padding-bottom: .1em;
-    overflow: hidden;
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
 }
 
 .ml7 .letter {
-    transform-origin: 0% 100%;
-    display: inline-block;
-    line-height: 1em;
+  transform-origin: 0% 100%;
+  display: inline-block;
+  line-height: 1em;
 }
 
 h1.ml7 {
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 3.7em;
-    margin-bottom: 0px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3.7em;
+  margin-bottom: 0px;
 }
 
 .upperletter {
-    color: #e6402b;
-    position: relative;
-    top: .05em;
-    font-size: 1.1em;
-    font-weight: 400;
+  color: #e6402b;
+  position: relative;
+  top: 0.05em;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 .lastName {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 ion-icon[name="heart"] {
-    color: #e6402b;
-    position: relative;
-    top: 3px;
+  color: #e6402b;
+  position: relative;
+  top: 3px;
 }
 
 ion-icon[name="moon"] {
-    position: relative;
-    top: 2px;
-    font-size: 1.2em;
+  position: relative;
+  top: 2px;
+  font-size: 1.2em;
 }
 
 #tagline {
-    width: 640px;
+  width: 640px;
 }
 
 p {
-    color:#5F5F5F;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    line-height: 28px;
-    margin-top: 0;
-    margin-bottom: 0;   
+  color: #f0f0f0;;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .buttons {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .buttons button {
-    padding: 14px 30px;
-    border: none;
-    color: #ffffff;
-    font-size: 14px;
-    letter-spacing: 4px;
-    font-weight: 300;
-    cursor: pointer; 
+  padding: 14px 30px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 #one {
-    background: linear-gradient(135deg, rgb(106, 219, 157) 0%, rgb(23, 167, 88) 100%);
-    border: .3pt solid rgba(255, 255, 255, .3);
+  border: none;
+  position: relative;
+  margin-top: 15px;
+  background: linear-gradient(
+    135deg,
+    rgb(106, 219, 157) 0%,
+    rgb(23, 167, 88) 100%
+  );
+  color: #ffffff;
+  transition: all 0.4s;
+  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#one:hover {
+  box-shadow: none;
 }
 
 .media {
-    position: absolute;
-    top: 38%;
-    z-index: 1;
-    right: 6%;
+  position: fixed;
+  top: 40vh;
+  z-index: 1;
+  right: 30px;
+  width: 60px;
 }
 
 .media ul {
-    position: absolute;
-    list-style: none;
+  list-style: none;
 }
 
 .media ul li {
-    color: grey;
-    padding: 12px 0;
-    display: inline-block !important;
+  position: relative;
+  padding-bottom: 15px;
+  display: inline-block !important;
 }
 
 .bottom-text {
-    position: absolute;
-    z-index: 1;
-    color: grey;
-    font-size: 18px;
-    font-family: 'Space Mono', monospace;
-    margin-left: 2em;
-    bottom: 40px;
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 18px;
+  font-family: "Space Mono", monospace;
+  margin-left: 2em;
+  bottom: 40px;
 }
 
 .copyright {
-    position: absolute;
-    z-index: 1;
-    color: grey;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    width: 400px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 20px;
-    
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  position: fixed;
 }
 
 .loading-screen {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: #0a0a0a;
-    z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0a;
+  z-index: 2;
 }
 
 .ring {
-    margin: 0%;
-    padding: 0%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 2;
-    width: 40%;
-    opacity: .7;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+  width: 390px;
+  opacity: 0.7;
 }
 
 .ringOne img {
-    animation: rotateRing 2s linear infinite;
+  animation: rotateRing 2s linear infinite;
 }
 
 .ringTwo img {
-    animation: rotateRing 8s linear infinite;
+  animation: rotateRing 8s linear infinite;
 }
 
 .ml7 .red {
-    color: #e6402b;
-    font-weight: 900;
-    position: relative;
-    top: 2px;
-    font-size: 1.1em;
+  color: #e6402b;
+  font-weight: 900;
+  position: relative;
+  top: 2px;
+  font-size: 1.1em;
+}
+
+.panel {
+  border-top: 1px solid #757575;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(img/hero.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.panel.panel-main {
+  overflow: hidden;
 }
 
 @keyframes rotateRing {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+@media (max-width: 900px) {
+  .loading-screen {
+    display: none;
+  }
 
-@media(max-width: 900px) {
-    .loading-screen {
-        display: none;
-    }
+  .ring img {
+    display: none;
+  }
 
-    .ring img {
-        display: none;
-    }
+  .header p,
+  button,
+  .media,
+  h1 {
+    display: none;
+  }
+}
 
-    .header p, button, .media, h1 {
-        display: none;
-    }
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(143, 143, 143);
+}
+
+.p2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.skills-wrapper {
+  color: #bdbdbd;
+}
+
+.skills-wrapper ul:before {
+  display: block;
+  margin-bottom: 10px;
+  content:attr(aria-label);
+  font-size: 14px;
+  font-weight: 400;
+  color: #a9e686;
+  flex: 0 0 100%;
+}
+
+.skills-wrapper ul {
+  margin-top: 5px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-wrapper.skills-wrapper--soft ul {
+  margin-bottom: 10px;
+}
+
+.skills-wrapper.skills-wrapper--soft ul::before {
+  margin-bottom: 5px;
+}
+
+.skills-wrapper ul li {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px 4px;
+  margin-right: 5px;
+  border-radius: 2px;
+  border: 2px solid #353535;
+  background-color: #333333;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 20px;
+  line-height: 20px;
+  cursor: default;
+}
+
+.skills-wrapper ul li img {
+  object-fit: contain;
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
+
+.slide-wrapper {
+  position: relative;
+  min-height: 200px;
+}
+
+.slide {
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+  transition: all .4s;
+  opacity: 0;
+}
+
+.slide--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dots {
+  position: absolute;
+  bottom: -35px;
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50px;
+  background-color: #6d6d6d;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.dot--active {
+  background-color: #ffffff;
+}
+
+.main {
+  height: 100vh;
+  background: url(img/hero.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__image.project__image--gosurf {
+  box-shadow: inset 0 0 100px black;
+  background: url(img/gosurf.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__image.project__image--marioplan {
+  box-shadow: inset 0 0 100px black;
+  background: url(img/marioplan.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__image.project__image--covid {
+  box-shadow: inset 0 0 100px black;
+  background: url(img/covid.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__image.project__image--excel {
+  box-shadow: inset 0 0 100px black;
+  background: url(img/excel.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.panel .container {
+  position: relative;
+  left: 15vw;
+  width: 65vw;
+  height: 100%;
+}
+
+.container .wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project__image {
+  height: 100%;
+  width: 100%;
+  max-height: 370px;
+  max-width: 610px;
+}
+
+.project-info {
+  max-height: 350px;
+  height: 100%;
+  color: #f0f0f0;
+  text-align: right;
+  max-width: 30vw;
+  margin-left: 20px;
+}
+
+.project__title {
+  letter-spacing: 1px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.project__description {
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.project__technologies {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.project__technologies img {
+  width: 48px;
+  height: 48px;
+  margin-left: 5px;
+  object-fit: contain;
+}
+
+.project__links {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.project__links a {
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.skip {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #f0f0f0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .4s;
+  z-index: 4;
+  outline: none;
+}
+
+.skip:disabled {
+  display: none;
 }
 

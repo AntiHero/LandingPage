@@ -1,80 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/style.css">
-  <title>CV</title>
-  
-  <!-- icons -->
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-  
-  <!-- gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-  
-  <!-- AnimeJS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  
-  <!-- JQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
-  <div class="container">
-    <div class="loading-screen"></div>
-    <div class="laoder">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1600, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>CV</title>
+
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- AnimeJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+
+    <!-- ScrollMagic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <button class="skip">Skip</button>
+      <div class="loading-screen"></div>
       <div class="ringOne ring">
-        <img src="assets/img/ring.png" alt="">
+        <img src="assets/img/ring.png" alt="" />
       </div>
       <div class="ringTwo ring">
-        <img src="assets/img/ring.png" alt="">
+        <img src="assets/img/ring.png" alt="" />
+      </div>
+      <div class="header">
+        <h1 class="ml7" id="title">
+          <span class="text-wrapper">
+            <span class="letters">Fullstack Web Dev</span>
+          </span>
+        </h1>
+        <p id="tagline" class="p1">
+          Hello! My name is Aleksandr. <br />
+          I'm fullstack engineer who is looking for opportunities in the field.<br />
+          My main goal is to provide my clients best solutions as in frontend so
+          and in backend!
+        </p>
+        <br />
+        <div class="slide-wrapper">
+          <div class="dots">
+            <span class="dot dot--active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <div class="slide slide--active">
+            <p id="tagline" class="p2">
+              Skills
+            </p>
+            <div id="tagline" class="skills-wrapper skills-wrapper--soft">
+              <ul aria-label="Frontend">
+                <li>HTML5 <img src="./assets/img/html5.png" alt="html5" /></li>
+                <li>CSS3 <img src="./assets/img/css3.png" alt="css3" /></li>
+                <li>
+                  JavaScript
+                  <img src="./assets/img/javascript.png" alt="javascript" />
+                </li>
+                <li>
+                  TypeScript
+                  <img src="./assets/img/typescript.png" alt="typescript" />
+                </li>
+                <li>React <img src="./assets/img/react.png" alt="react" /></li>
+                <li>Redux <img src="./assets/img/redux.png" alt="redux" /></li>
+              </ul>
+              <ul aria-label="Server">
+                <li>
+                  NodeJS <img src="./assets/img/nodejs.png" alt="node.js" />
+                </li>
+                <li>
+                  Express <img src="./assets/img/express.png" alt="express" />
+                </li>
+                <li>
+                  GraphQl <img src="./assets/img/graphql.png" alt="graphql" />
+                </li>
+                <li>Python <img src="./assets/img/python.png" alt="python" /></li>
+              </ul>
+              <ul aria-label="Database">
+                <li>
+                  MongoDb <img src="./assets/img/mongodb.png" alt="mongodb" />
+                </li>
+                <li>
+                  Firebase <img src="./assets/img/firebase.png" alt="firebase" />
+                </li>
+                <li>
+                  PostgreSQL
+                  <img src="./assets/img/postgresql.png" alt="postgresql" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <p id="tagline" class="p2">
+              Languages I speak
+            </p>
+            <div id="tagline" class="skills-wrapper">
+              <ul aria-label="Russian">
+                <li>Native</li>
+              </ul>
+              <ul aria-label="English">
+                <li>C1</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <p id="tagline" class="p2">
+              Other
+            </p>
+            <div id="tagline" class="skills-wrapper">
+              <ul aria-label="Soft skills">
+                <li>Flexibility</li>
+                <li>Adaptability</li>
+                <li>Teamwork</li>
+                <li>Problem-solving</li>
+                <li>Willingness to learn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="one">Download</button>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2020 by
+        <span class="lastName">A.Schemelev</span>. Designed with passion
+        <ion-icon name="heart"></ion-icon>.
+      </div>
+      <div class="media">
+        <ul>
+          <li>
+            <a href="mailto:aleksandr.schemelev@email.com">
+              <ion-icon name="logo-google" size="large"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/AntiHero" target="_blank">
+              <ion-icon name="logo-github" size="large"></ion-icon>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="logo">
-    <ion-icon name="moon"></ion-icon>
-    Choose your side
-  </div>
-  <div class="header">
-    <h1 class="ml7" id="title">
-      <span class="text-wrapper">
-        <span class="letters">Front Web Dev</span>
-      </span>
-    </h1>
-    <p id="tagline" class="p1">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi minima deserunt sapiente, fuga iure quod consequuntur adipisci nihil exercitationem earum itaque rem fugit doloremque aspernatur eos blanditiis dolore? Quos!
-    </p>
-    <br>
-    <p id="tagline" class="p2">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, hic excepturi? Modi ducimus accusamus voluptates impedit quo hic vero perspiciatis!
-    </p>
-    <div class="buttons">
-      <button id="one">Download</button>
-    </div>
-  </div>
-  <div class="copyright">
-    &copy; 2019 by 
-    <span class="lastName">A.Schemelev</span>.
-    Designed with passion
-    <ion-icon name="heart"></ion-icon>.
-  </div>
-  <div class="media">
-    <ul>
-      <li>
-        <ion-icon name="logo-skype" size="large"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="logo-google" size="large"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="logo-instagram" size="large"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="logo-github" size="large"></ion-icon>
-      </li>
-    </ul>
-  </div>
-  <!-- js -->
-  <script src="assets/index.js"></script>   
-</body>
+    <section class="panel">
+      <div class="container">
+        <div class="wrapper">
+          <div class="project__image project__image--gosurf"></div>
+          <div class="project-info">
+            <div class="project__title">GoSurf</div>
+            <div class="project__description">This is one of my favourite frontend works. Cool Design. A lot of animations, including complicated svg and slider animations. Fully responsive.</div>
+            <div class="project__technologies">
+              <img src="./assets/img/javascript.png" alt="javascript" />
+              <img src="./assets/img/gulp.png" alt="gulp" />
+              <img src="./assets/img/sass.png" alt="sass" />
+              <img src="./assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="project__links">
+              <a href="https://github.com/AntiHero/GoSurf/tree/gh-pages" target="_blank">Source</a>
+              <a href="https://antihero.github.io/GoSurf/app/" target="_blank">Watch live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="container">
+        <div class="wrapper">
+          <div class="project__image project__image--marioplan"></div>
+          <div class="project-info">
+            <div class="project__title">MarioPlan</div>
+            <div class="project__description">This app uses Firebase to store users stories.</div>
+            <div class="project__technologies">
+              <img src="./assets/img/react.png" alt="react" />
+              <img src="./assets/img/redux.png" alt="redux" />
+              <img src="./assets/img/firebase.png" alt="firebase" />
+              <img src="./assets/img/css3.png" alt="css3" />
+              <img src="./assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="project__links">
+              <a href="https://github.com/AntiHero/ReactProjectTemplate1" target="_blank">Source</a>
+              <a href="https://zerohelp-marioplan.netlify.app" target="_blank">Watch live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="container">
+        <div class="wrapper">
+          <div class="project__image project__image--covid"></div>
+          <div class="project-info">
+            <div class="project__title">Covid-19</div>
+            <div class="project__description">Covid-19 app provides information about covid cases in countries and shows general statistics.</div>
+            <div class="project__technologies">
+              <img src="./assets/img/react.png" alt="react" />
+              <img src="./assets/img/css3.png" alt="css3" />
+              <img src="./assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="project__links">
+              <a href="https://github.com/AntiHero/COVID-19" target="_blank">Source</a>
+              <a href="https://covid-19-zhstudio.netlify.app/" target="_blank">Watch live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="container">
+        <div class="wrapper">
+          <div class="project__image project__image--excel"></div>
+          <div class="project-info">
+            <div class="project__title">Excel</div>
+            <div class="project__description">Javascript. A loooooot of Javascript. This app implements basic excel features and allows user to create tables and store them</div>
+            <div class="project__technologies">
+              <img src="./assets/img/react.png" alt="react" />
+              <img src="./assets/img/webpack.png" alt="webpack" />
+              <img src="./assets/img/css3.png" alt="css3" />
+              <img src="./assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="project__links">
+              <a href="https://github.com/AntiHero/Excel/tree/gh-pages" target="_blank">Source</a>
+              <a href="https://antihero.github.io/Excel/public/" target="_blank">Watch live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="assets/index.js"></script>
+    <script src="assets/slide.js"></script>
+
+  </body>
 </html>
