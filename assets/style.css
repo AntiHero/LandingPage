@@ -177,6 +177,13 @@ p {
   -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  outline: none;
+}
+
+#one:active,
+#one:focus {
+  border: none;
+  outline: none;
 }
 
 #one:hover {
